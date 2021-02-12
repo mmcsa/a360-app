@@ -1,0 +1,54 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "vmName": {
+            "value": null
+        },
+        "vmSize": {
+            "value": null
+        },
+        "adminUsername": {
+            "value": null
+        },
+        "adminPassword": {
+            "value": null
+        },
+        "imagePublisher": {
+            "value": null
+        },
+        "imageOffer": {
+            "value": null
+        },
+        "imageSku": {
+            "value": null
+        },
+        "virtualNetworkName": {
+            "value": null
+        },
+        "subnetName": {
+            "value": null
+        },
+        "existingVnetResourceGroupName": {
+            "value": null
+        },
+        "privateIpAddress": {
+            "value": null
+        },
+        "domainToJoin": {
+            "value": null
+        },
+        "domainUserName": {
+            "value": null
+        },
+        "domainPassword": {
+            "value": null
+        },
+        "ouPath": {
+            "value": null
+        }
+
+        
+
+    }
+}
