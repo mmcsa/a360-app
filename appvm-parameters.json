@@ -3,20 +3,20 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "vmName": {
-            "value": "as360-vm2"
+            "value": "vm-name-vm1"
         },
         "vmSize": {
             "value": "Standard_D2s_v4"
         },
         "adminUsername": {
-            "value": "adsradmin"
+            "value": "admin-user"
         },
         "adminPassword": {
             "reference": {
                 "keyVault": {
-                "id": "/subscriptions/ea0136ce-8872-4c39-9d70-f5bc45f8a600/resourceGroups/mmfta-a360vmtest-rg/providers/Microsoft.KeyVault/vaults/mmfta-a360-kv"
+                "id": "/subscriptions/xx111111xx-2222-3333-4444-888888888888/resourceGroups/resourcegroup-name-rg/providers/Microsoft.KeyVault/vaults/xxxVaultNamexxx"
                 },
-                "secretName": "adsradmin"
+                "secretName": "admin-password"
             }
         },
         "imagePublisher": {
@@ -29,29 +29,29 @@
             "value": "2019-Datacenter"
         },
         "virtualNetworkName": {
-            "value": "mmfta-dev-vNET"
+            "value": "vnet-name-vnet"
         },
         "subnetName": {
-            "value": "CoreSubnet"
+            "value": "subnet-name"
         },
         "existingVnetResourceGroupName": {
-            "value": "mmfta-VNet-rg"
+            "value": "vnet-resourcegroupname-rg"
         },
         "privateIpAddress": {
-            "value": "10.10.4.23"   
+            "value": "your.ip.address.value"   
         },
         "domainToJoin": {
-            "value": "adsr.dev"
+            "value": "domain.com"
         },
         "domainUserName": {
-            "value": "adsr"
+            "value": "joinuser@domain.com"
         },
         "domainPassword": {
             "reference": {
                 "keyVault": {
-                "id": "/subscriptions/ea0136ce-8872-4c39-9d70-f5bc45f8a600/resourceGroups/mmfta-a360vmtest-rg/providers/Microsoft.KeyVault/vaults/mmfta-a360-kv"
+                "id": "/subscriptions/xx111111xx-2222-3333-4444-888888888888/resourceGroups/resourcegroup-name-rg/providers/Microsoft.KeyVault/vaults/xxxVaultNamexxx"
                 },
-                "secretName": "adsr-domain"
+                "secretName": "domain-join-password"
             }
         },
         "ouPath": {
