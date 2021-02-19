@@ -3,49 +3,59 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "vmName": {
-            "value": null
+            "value": "as360-vm2"
         },
         "vmSize": {
-            "value": null
+            "value": "Standard_D2s_v4"
         },
         "adminUsername": {
-            "value": null
+            "value": "adsradmin"
         },
         "adminPassword": {
-            "value": null
+            "reference": {
+                "keyVault": {
+                "id": "/subscriptions/ea0136ce-8872-4c39-9d70-f5bc45f8a600/resourceGroups/mmfta-a360vmtest-rg/providers/Microsoft.KeyVault/vaults/mmfta-a360-kv"
+                },
+                "secretName": "adsradmin"
+            }
         },
         "imagePublisher": {
-            "value": null
+            "value": "MicrosoftWindowsServer"
         },
         "imageOffer": {
-            "value": null
+            "value": "WindowsServer"
         },
         "imageSku": {
-            "value": null
+            "value": "2019-Datacenter"
         },
         "virtualNetworkName": {
-            "value": null
+            "value": "mmfta-dev-vNET"
         },
         "subnetName": {
-            "value": null
+            "value": "CoreSubnet"
         },
         "existingVnetResourceGroupName": {
-            "value": null
+            "value": "mmfta-VNet-rg"
         },
         "privateIpAddress": {
-            "value": null
+            "value": "10.10.4.23"   
         },
         "domainToJoin": {
-            "value": null
+            "value": "adsr.dev"
         },
         "domainUserName": {
-            "value": null
+            "value": "adsr"
         },
         "domainPassword": {
-            "value": null
+            "reference": {
+                "keyVault": {
+                "id": "/subscriptions/ea0136ce-8872-4c39-9d70-f5bc45f8a600/resourceGroups/mmfta-a360vmtest-rg/providers/Microsoft.KeyVault/vaults/mmfta-a360-kv"
+                },
+                "secretName": "adsr-domain"
+            }
         },
         "ouPath": {
-            "value": null
+            "value": ""
         }
 
         

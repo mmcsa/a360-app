@@ -116,7 +116,7 @@
                         "name": "ipconfig1",
                         "properties": {
                             "privateIPAllocationMethod": "Static",
-                            "privateIPAddressVersion": "[parameters('privateIpAddress')]",
+                            "privateIPAddress": "[parameters('privateIpAddress')]",
                             "subnet": {
                                 "id": "[variables('subnetRef')]"
                             }
@@ -154,7 +154,7 @@
                     },
                     "dataDisks": [
                         {
-                        "name": "[concat(parameters('vmName', '-DataDisk'))]",
+                        "name": "[concat(parameters('vmName'), '-DataDisk')]",
                         "diskSizeGB": 1023,
                         "lun": 0,
                         "createOption": "Empty"
@@ -173,11 +173,7 @@
                         }
                     ]
                 },
-                "diagnosticsProfile": {
-                    "bootDiagnostics": {
-                        "enabled": true
-                    }
-                }
+                "diagnosticsProfile": {}
             }
         },
         {
@@ -202,7 +198,7 @@
                     "Options": "[parameters('domainJoinOptions')]"
                     },
                     "protectedSettings": {
-                        "Password": "[parameters('domainPassword')]"
+                    "Password": "[parameters('domainPassword')]"
                     }
                 }
             }
